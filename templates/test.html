@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Sales Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        label {
+            width: 30%;
+            font-weight: bold;
+        }
+        select {
+            width: 65%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            appearance: none;
+            cursor: pointer;
+        }
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Please fill in the details to get the predicted sales:</h3>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="" disabled selected>-- Select Gender --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <select id="age">
+                <option value="" disabled selected>-- Select Age --</option>
+                <option value="under_18">Under 18</option>
+                <option value="18_25">18-25</option>
+                <option value="26_35">26-35</option>
+                <option value="36_45">36-45</option>
+                <option value="46_plus">46+</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="problem">Problem:</label>
+            <select id="problem">
+                <option value="" disabled selected>-- Select Problem --</option>
+                <option value="low_sales">Low Sales</option>
+                <option value="customer_loss">Customer Loss</option>
+                <option value="competition">High Competition</option>
+                <option value="pricing">Pricing Issues</option>
+            </select>
+        </div>
+    </div>
+
+</body>
+</html>
